@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gem Colletor</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<h1>Gem Collector</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-6 instructions">
+			<div class="panel panel-default">
+  				<div class="panel-heading">Instructions</div>
+  				<div class="panel-body">
+	  				<ul>
+						<li>You will get a random target number at the start of the game.</li>
+						<li>By clicking the cyrstals, you will ad points to your score until it matches the target number and you win, or you surpass it and lose.</li>
+						<li>The crystals values are hidden until you click on them.</li>
+						<li>The crystals will get a new value each round.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 gems"></div>
+	</div>
+	<div class="row">		
+		<div class="col-md-4 goalScore">
+			<div class="panel panel-default">
+  				<div class="panel-heading">Target Number</div>
+  				<div class="panel-body targetBody"></div>
+			</div>
+		</div>
+		<div class="col-md-2 winsLosses">
+			<div class="panel panel-default">
+  				<div class="panel-heading">Wins</div>
+  				<div class="panel-body scoreBody">
+  					<span id="wins">0</span>
+  				</div>
+			</div>
+		</div>
+		<div class="col-md-2 winsLosses">
+			<div class="panel panel-default">
+  				<div class="panel-heading">Losses</div>
+  				<div class="panel-body scoreBody">
+  					<span id="losses">0</span>
+  				</div>
+			</div>
+		</div>
+		<div class="col-md-4 userScore">
+			<div class="panel panel-default">
+  				<div class="panel-heading">User Number</div>
+  				<div class="panel-body userBody">0</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<span id="message"></span>
+	</div>
+</div>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
